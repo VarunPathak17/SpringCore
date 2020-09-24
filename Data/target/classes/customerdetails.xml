@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="cust1" class="com.spring.customer.Data.CustomerData">
+   	<property name="custID" value="1001"/>
+   	<property name="custName" value="Ashutosh"/>
+   </bean>
+   <bean id="cust2" class="com.spring.customer.Data.CustomerData">
+   	<property name="custID" value="1002"/>
+   	<property name="custName" value="Franciso"/>
+   </bean>
+   </beans>
