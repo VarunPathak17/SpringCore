@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   <bean id="first" class="GradleSpringDemo.CustomerData">
+   	<property name="cID" value="578"/>
+   	<property name="cName" value="Fazak"/>
+   	<property name="Items" value="4"/>
+   	<property name="iName" value="Grocery"/>
+   </bean>
+   <bean id="second" class="GradleSpringDemo.CustomerData">
+   	<property name="cID" value="579"/>
+   	<property name="cName" value="Feroz"/>
+   	<property name="Items" value="7"/>
+   	<property name="iName" value="Bakery"/>
+   </bean>
+   <bean id="third" class="GradleSpringDemo.CustomerData">
+   	<property name="cID" value="599"/>
+   	<property name="cName" value="John"/>
+   	<property name="Items" value="1"/>
+   	<property name="iName" value="Eatables"/>
+   </bean>
+</beans>   
