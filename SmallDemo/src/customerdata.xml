@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <bean id = "adrs" class = "com.demo.start.Address" >
+      <property name = "city" value = "Shimla"/>
+        <property name = "state" value = "HP"/>
+          <property name = "zipCode" value = "171011"/>
+   </bean>
+   <bean id = "adrs1" class = "com.demo.start.Address" >
+      <property name = "city" value = "Chandigarh"/>
+        <property name = "state" value = "UT"/>
+          <property name = "zipCode" value = "1400014"/>
+   </bean>
+   <bean id="adrs2" class="com.demo.start.Address">
+   	<property name="city" value="Mohali"/>
+   	<property name="state" value="Punjab"/>
+ 	<property name="zipCode" value="140301"/>  	
+    </bean>
+   <bean id="cust1" class="com.demo.start.Customer" autowire="byName">
+   	<property name="custId" value="101"/>
+   	<property name="custName" value="Steven"/>
+   
+   </bean>
+   <bean id="cust2" class="com.demo.start.Customer" autowire="byName">
+   	<property name="custId" value="102"/>
+   	<property name="custName" value="Salman"/>
+   </bean>
+   <bean id="cust3" class="com.demo.start.Customer" autowire="byName">
+   	<property name="custId" value="103"/>
+   	<property name="custName" value="Satwinder"/>
+   </bean>
+   </beans>
